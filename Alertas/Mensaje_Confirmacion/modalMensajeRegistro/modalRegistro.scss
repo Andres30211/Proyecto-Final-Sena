@@ -1,0 +1,38 @@
+@import url(../../../Css_global/Variables.css.scss);
+
+
+.modalRegister{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .9);
+    pointer-events: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+}
+
+.container__modal{
+
+    background-color: var(--background-color-primary);
+    width: 40%;
+    max-width: 350px;
+    padding: 3em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal__show{
+    opacity: 1;
+    pointer-events: unset;
+    text-align: center;
+}
+
+.container__modal p{
+    color: var(--color-text-secundary);
+    font-size: 13px;
+    font-weight: bold;
+}

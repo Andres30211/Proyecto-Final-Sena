@@ -1,0 +1,251 @@
+@import url(../Css_global/Variables.css.scss);
+
+html {
+    font-size: 62.5%;
+    /* RESETEA PARA LOS REMS - 62.5% = 10PX DE 16PX */
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "touche", sans-serif;
+}
+
+body{
+    background-image: url(../assets/background/fondoColor-02.png);
+    width: 100%;
+    background-size: cover;
+    max-width: 1400px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0px 8rem;
+
+}
+
+.logo{
+    width: 12rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li{
+    padding: 0px 15px;
+    list-style: none;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--color-text-secundary);
+    transition: color 300ms;
+}
+
+.nav-bar ul li a:hover{
+    color: var(--color-text-primary);
+}
+
+.nav-bar ul li a.active{
+    color: var(--color-text-primary);
+}
+
+
+/*Content principal --------------------> main - cuerpo de la página */
+
+.content_principal{
+    padding: 6rem 8rem;
+    padding-bottom: 0px;
+}
+
+.content__form{
+    width: 70%;
+    height: 67%;
+    display: flex;
+
+}
+
+.form__left{
+    width: 40%;
+    height: 100%;
+    background-color: var(--background-color-form);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+
+
+
+.title__form-left h4{
+    font-size: 14px;
+    color: var(--color-text-form-primary);
+    text-align: center;
+    margin-bottom: 3em;
+    
+}
+
+/* Form left --------------------->*/
+
+.form__left form{
+    display: grid;
+    gap: 1.5em;
+    color: var(--color-text-primary);
+}
+
+.group__principal .label__form-left{
+    display: block;
+    color: var(--color-text-form-primary);
+    font-size: 9px;
+}
+
+.group__principal .input__form-lefth{
+    width: 100%;
+    border-radius: 6px;
+    padding: .8em;
+    border: none;
+    outline: none;
+    background-color: var(--background-color-form-secundary);
+
+}
+
+.group__principal-select .label__form-left{
+    display: block;
+    color: var(--color-text-form-primary);
+}
+
+.group__principal-select select{
+    width: 100%;
+    border-radius: 6px;
+    padding: .8em;
+    border: none;
+    outline: none;
+    background-color: var(--background-color-form-secundary);
+    color: var(--color-text-form-primary);
+}
+
+.form-eye{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    width: 4%;
+    top: 2rem;
+    left: 25.6rem;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.group__button{
+    width: 100%;
+}
+.group__button .btn-registrar{
+    width: 100%;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid var(--background-color-primary);
+    color: var(--color-text-primary);
+}
+
+.group__button .btn-registrar:hover{
+    background-color: var(--background-color-primary);
+    color: var(--color-text-secundary);
+    cursor: pointer;
+}
+
+
+/* Form right --------------------->*/
+
+.form__rigth{
+    width: 45%;
+    height: 70%;
+    background-color: var(--background-color-primary);
+    padding: 3rem;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 6rem 0rem;
+}
+
+.form__rigth form{
+    display: grid;
+    gap: 1.5em;
+}
+
+.form__rigth .title__form-left h4{
+    color: var(--color-text-secundary);
+}
+
+.group__secundary .label__form-right{
+    display: block;
+    color: var(--color-text-secundary);
+}
+
+.group__secundary .input__form-right{
+    width: 100%;
+    border-radius: 6px;
+    padding: .8em;
+    border: none;
+    outline: none;
+}
+
+.group__secundary-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.group__secundary-right a{
+    color: var(--color-text-secundary);
+}
+
+.group__button .btn-ingresar{
+    width: 100%;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid var(--background-color-primary);
+    color: var(--color-text-secundary);
+    background-color: var(--background-color-secundary);
+}
+
+.group__button .btn-ingresar:hover{
+    background-color: transparent;
+    border: 1px solid var(--background-color-secundary);
+    cursor: pointer;
+}
+
+/* Content redes sociales, linea ---------------->*/
+
+
+.redes{
+    position: relative;
+    left: 46rem;
+    top: 18rem;
+    height: 300px;
+}
+.linea{
+    display: flex;
+    justify-content: center;
+}
+
+.linea img{
+    width: 20px;
+
+
+}
+.redesSociales img{
+    width: 30px;
+    display: block;
+}
+
